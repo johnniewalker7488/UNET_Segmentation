@@ -1,0 +1,6 @@
+dataset/
+saved_images/
+train.zip
+train_masks.zip
+.ipynb_checkpoints/
+__pycache__/
