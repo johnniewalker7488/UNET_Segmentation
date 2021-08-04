@@ -25,4 +25,3 @@ def train_fn(loader, model, optimizer, loss_fn, scaler, device, checkpoint_path=
         
         loop.set_postfix(loss=loss.item())
     
-    

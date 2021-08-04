@@ -57,7 +57,7 @@ def check_dice(loader, model, device='cuda:0'):
             preds = torch.sigmoid(model(x))
             preds = (preds > 0.5).float()
             dice_score += (2 * (preds * y).sum()) / (preds + y).sum() + 1e-8
-    print(f'Validation Dice score: {dice_score/len(loader)}')
+    print(f'Validation Dice score: {dice_score/len(loader):.4f}')
     model.train()
     
     
